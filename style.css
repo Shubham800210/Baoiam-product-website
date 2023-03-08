@@ -8,7 +8,7 @@
 }
 
 body {
-    background:gray
+    background:rgb(252, 249, 249)
     
 }
 
@@ -17,17 +17,23 @@ body {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     background-color: white;
-
+    position: relative;
+    margin-bottom: 80px;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* margin-bottom: 20px; */
 }
 
 #top1 {
     /* border: 1px solid black; */
+    width: 100%;
     padding: 10px;
     background:#c883e6;
     display: flex;
     justify-content: space-around;
-    
-    /* padding-top: 5px; */
+   
 
 }
 
@@ -71,7 +77,7 @@ body {
 }
 
 #top2 {
-
+ width: 100%;
     border-bottom: 1px solid rgb(241, 220, 220);
     padding: 13px;
     display: flex;
@@ -79,10 +85,9 @@ body {
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     box-shadow: 0 5px 15px rgba(0,0,0,0.06);
-    /* z-index: 999; */
-    /* position: fixed; */
-    /* top: 0; */
-    /* left: 0; */
+    
+    /* margin-bottom: 40px; */
+    background: rgb(255, 255, 255)
 
 }
 
@@ -120,7 +125,7 @@ body {
 
 .logo {
     width: 148px;
-    height: 102px;
+    height: 117px;
     margin-bottom: -33px;
     margin-top: -30px;
 }
@@ -131,7 +136,7 @@ body {
     padding: 20px;
     font-size: 15px;
     color: gray;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     /* font-family: 'Montserrat', sans-serif; */
 
 
@@ -177,38 +182,225 @@ body {
 
 
 /* header style end */
-#singlediv {
-    /* border: 1px solid blue; */
-    margin: auto;
+
+
+/* <!-- Categories part  --> */
+
+#product1{
+    padding: 25px 80px;
     text-align: center;
-
+}
+#product1 h2{
+   font-size: 3.5rem;
+   line-height: 54px;
+   color: #222;
+}
+#product1 p{
+    font-size: 18px;
+    color: #bf65e6;
+    font-weight: 500;
+    margin: 15px 0 20px 0;
+}
+#product1 .cart{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
 }
 
-#singleImage {
-    width: 85%;
-    margin-bottom: 10px;
-    margin-top: 40px;
+#product1 .cart-img{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #7500a7;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.03);
+    margin: 15px 0;
+    position: relative;
 }
+#product1 .cart-img:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.08);
+    transform: scale(1.05);
+}
+
+
+#product1 .cart-img img{
+    width: 100%;
+    /* height: 34vh; */
+    height: 200px;
+    border-radius: 20px;
+}
+
+#product1 .cart-img .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .cart-img span{
+    color: #606063;
+    font-size: 13px;
+}
+#product1 .cart-img .des h5{
+    padding-top: 2px;
+    color: #1a1a1a;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#product1 .cart-img .des i{
+    font-size: 12px;
+    color: green;
+}
+#product1 .cart-img .des h4{
+    padding-top:2px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #7500a7;
+}
+#product1 .cart-img .img{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+/* <!-- Categories End  --> */
 
 #heading {
     text-align: center;
     font-size: 45px;
-    margin-top: 30px;
+    /* margin-top: 10px; */
+    margin-block: 10px;
     /* font-family:'Montserrat', sans-serif;  */
 
 }
 
 #heading>p>a {
     text-decoration: none;
-    color: #bf65e6;
+    /* color: #bf65e6; */
+    color:#b300ff
+
 }
 
 #heading>p>a:hover {
-    color:#b300ff
+    color:#bf65e6
 }
 
+/* banner section  */
+#banner{
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
+}
+#banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(./img/b17.jpg);
+    min-width: 660px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding-left: 20px;
+}
+#banner .banner-box2{
+    background-image: url(./img/b10.jpg);
+}
 
+#banner h4{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+#banner h2{
+    font-size: 3.1rem;
+    line-height: 54px;
+    color: #ffffff;
+}
+#banner span{
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+}
+#banner .banner-box button{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    transition: 0.2s;
+    outline: none;
+}
+#banner .banner-box:hover button{
+   background: #7500a7;
+   border: 1px solid #7500a7
+}
+
+/* <!-- banner section end  --> */
+
+/* second banner section  */
+
+#banner2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+    /* gap: 5px; */
+}
+#banner2 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(./img/b4.jpg);
+    min-width: 33%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: 0.2s;
+}
+#banner2 .banner-box2{
+    background-image: url(./img/b16.jpg);
+    
+}
+#banner2 .banner-box3{
+    background-image: url(./img/f5.jpg);
+    background-color: #606063;
+    
+}
+#banner2 h2{
+  color: #fff;
+  font-size: 22px;
+  font-weight: 900;
+}
+#banner2 h3{
+  color: #f81414;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+#banner2:hover h2{
+    font-size: 25px;
+    background-color: #7500a7;
+}
+#banner2:hover h3{
+    font-size: 25px;
+    /* background-color: #0077B5; */
+}
 
 /* newsletter Start */
 #newsletter{
@@ -259,6 +451,7 @@ body {
 
 .form button{
     background-color: #b300ff;
+    background:linear-gradient(272deg,#72521a,#7a5f14 6%,#c99c16 15%,#c59914 24%,#8d6f15 33%,#b78c0b 46%,#b18c17 54%,#b59017 63%,#977b23 73%,#c99e11 81%,#a87b1b 89%,#4e390d);
     color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -269,8 +462,9 @@ body {
 }
 .form button:hover{
     cursor: pointer;
-    background-color: #c883e6;
     font-size: 18px;
+    /* background-color: #c883e6; */
+   
 }
 /* newsletter End */
 
@@ -286,13 +480,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: #e2e1e3;
+    background: #804fb0;
     padding-top: 60px;
 }
 
 .footer-container .col a{
     text-decoration: none;
     color: black;
+    font-size: 1.1rem;
 }
 .footer-container .col{
     display: flex;
@@ -304,23 +499,68 @@ body {
 }
 .footer-container h4{
     font-size: 25px;
-    color: #b301ff;;
+    color: #ffffff;;
     /* padding-bottom: 20px; */
 }
-.footer-container .follow .icon .fb{
-    width: 50px;
-    height: 40px;
+.footer-container p{
+    font-size: 1.1rem;
+}
+.icon{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.footer-container .follow{
-    margin-top: 20px;
-}
-.footer-container .follow .icon{
-    color: #465b52;
-    padding-right: 4px;
-    cursor: pointer;
+.icon a{
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff !important; 
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
+  .follow .icon a:nth-child(1){
+    background: #4267B2;
+  }
+  .follow .icon a:nth-child(1):hover{
+    color: #4267B2;
     
-}
+    
+  }
+  .follow .icon a:nth-child(2){
+    background: #1DA1F2;
+  }
+  .follow .icon a:nth-child(2):hover{
+    color: #1DA1F2;
+    /* background: #fff; */
+  }
+  .follow .icon a:nth-child(3){
+    background: #E1306C;
+  }
+  .follow .icon a:nth-child(3):hover{
+    color: #E1306C; 
+    /* background: #fff; */
+  }
+  .follow .icon a:nth-child(4){
+    background: #0077B5;
+  }
+  .follow .icon a:nth-child(4):hover{
+    color: #0077B5;
+    /* background: #fff; */
+  }
+  .follow .icon a:nth-child(5){
+    background: #FF0000;
+  }
+  .follow .icon a:nth-child(5):hover{
+    color: #FF0000;
+    /* background: #fff; */
+  }
+  
+
 
 .col .row img{
     width: 183px;
@@ -360,3 +600,8 @@ body {
 }
 
 /* footer end  */
+
+
+
+/* Media Query  */
+
